@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simples aumente e dimunua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="assets/imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 900px)" srcset="assets/imagens/foto-m.png" type="image/png">
+        <img src="assets/imagens/foto-g.png" alt="Imagem flexível grande">
+    </picture>
+    <h1>Reproduzir audio</h1>
+    <p>Vamos aprender a reproduzir audi oem HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="assets/mídia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="assets/mídia/guanacast-33.ogg" type="audio/ogg">
+        <source src="assets/mídia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente, seu navegador não consegue reproduzir audio. <a href="assets/mídia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!--MP3 WAV OGG-->
+</body>
+</html>
