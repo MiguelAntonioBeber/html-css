@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe#tela {
+        width: 95vh;
+        border: 2px solid black;
+        height: 450px;
+    }
+</style>
+
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit possimus nobis doloremque alias? Molestias autem cumque, eius nihil ea sapiente tenetur eos quo, recusandae accusantium laborum sequi eveniet sint?</p>
+    
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deleniti, facilis alias aliquid voluptatum fugit distinctio ex ducimus perferendis similique veniam quibusdam eius eveniet sit consequatur animi aperiam molestias exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur suscipit quis, quod iure, consectetur quidem, quam nesciunt vitae beatae dolorem aliquam corporis rerum eveniet itaque assumenda eligendi ducimus. Harum, exercitationem?</p>
+    
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum porro eum minus maiores est, excepturi repellat rerum. Reprehenderit, soluta nemo dolores molestias aliquam aut dolore quidem numquam consequuntur assumenda!</p><img src='imagens/cursoemvideo-logo.png'>">
+        <p>Infelizmente, seu navegador não é compatível com isso!</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam cumque ab ipsum atque delectus, deleniti hic? Quibusdam excepturi nobis consequatur, quasi, ipsum maiores expedita eius velit eos a illo placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet assumenda sunt aut fugiat illum repellat iste tempora dolore aspernatur ab saepe quaerat in perspiciatis natus, ipsa excepturi quae earum ullam!</p>
+
+
+</body>
+</html>
