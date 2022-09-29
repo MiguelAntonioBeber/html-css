@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <h1>Formulário de Login Simples</h1>
+    <form action="login.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label for="inome" class="prin">Nome: </label>
+                <input type="text" name="nome" id="inome" placeholder="Seu nome aqui..." minlength="2" maxlength="15">
+            </p>
+
+            <p>
+                <label for="isobrenome" class="prin">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" placeholder="Seu sobrenome aqui..." minlength="2" maxlength="15">
+            </p>
+
+            <p>
+                <label for="iemail" class="prin">Email: </label>
+                <input type="email" name="email" id="iemail" placeholder="Seu e-mail aqui..." minlength="11" maxlength="67" autocomplete="email">
+            </p>
+
+            <p>
+                <label for="iidade">Data de nascimento: </label>
+                <input type="date" name="data" id="idata" >
+            </p> <br> <br>
+
+            <p>
+                <label for="isexo">Sexo: </label> <br>
+                <input type="radio" name="sexo" id="isxmas" value="M" checked><label for="isxmas">Masculino</label> <br>
+                <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label> <br>
+                <input type="radio" name="sexo" id="isxsem" value="S"><label for="isxsem">Prefiro não informar</label> <br>
+            </p>
+            <p id="not">
+                <label for="not">Deseja receber todas as notificações? </label> <br>
+                <input type="radio" name="not" id="inots" value="S" checked><label for="isxsem">Sim</label> <br>
+                <input type="radio" name="not" id="inotn" value="S"><label for="isxsem">Não</label> <br>
+            </p> <br><br>
+
+            <p>
+                <input class="btn" type="submit" value="Enviar">
+                <input class="btn" type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <footer>
+        <p>Criado por <a href="https://github.com/MiguelAntoniobeber">MiguelAntoniobeber</a></p>
+    </footer>
+</body>
+</html>
