@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Media Query</title>
 </head>
-<body onresize="mudouTamanho">
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Meu SIte</h1>
+        <h1>Meu Si  te</h1>
         <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
@@ -36,18 +36,18 @@
         </article>
     </main>
     <script>
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
             }else {
                 itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
             }
         }
     </script>
